@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio | Wesley Bueno — Tecnologia & Dados</title>
+
+    <style>
+        :root {
+            --primary: #4a00e0;
+            --secondary: #8e2de2;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --gray: #dddddd;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: var(--light);
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            padding: 20px;
+            text-align: center;
+            color: var(--light);
+        }
+
+        nav {
+            background: #111;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: url("https://images.unsplash.com/photo-1555949963-aa79dcee981c") center/cover no-repeat;
+            background-attachment: fixed;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px black;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+            text-shadow: 0 0 5px black;
+        }
+
+        .btn {
+            background: var(--secondary);
+            color: var(--light);
+            padding: 10px 25px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .sobre-texto {
+            font-size: 18px;
+            line-height: 1.6;
+            background: #161616;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Projetos */
+        .projetos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #161616;
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform .2s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .skills-box {
+            background: #161616;
+            padding: 20px;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            color: var(--gray);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portfólio — Wesley Bueno</h1>
+        <p>Tecnologia • Dados • Desenvolvimento</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Desenvolvendo Soluções com Dados</h1>
+        <p>Sou estudante de Tecnologia da Informação com foco em SQL, Python, Power BI e análise de dados.
+            Buscando minha primeira oportunidade como estagiário na área.</p>
+
+        <a href="#projetos" class="btn">Ver Projetos</a>
+    </section>
+
+    <section id="sobre" class="section">
+        <h2>Sobre Mim</h2>
+        <p class="sobre-texto">
+            Olá! Meu nome é Wesley Bueno. Desenvolvi este site para apresentar meu portfólio na área de tecnologia
+            e demonstrar minhas habilidades práticas em programação, visualização de dados e ferramentas de análise.
+
+            Tenho me aprofundado em **SQL, Python, Power BI e Excel**, criando projetos que envolvem análises reais,
+            dashboards e consultas otimizadas. Meu objetivo é conquistar uma vaga de **estágio em dados** e continuar
+            evoluindo como profissional.
+        </p>
+    </section>
+
+    <section id="projetos" class="section">
+        <h2>Projetos em Destaque</h2>
+
+        <div class="projetos-grid">
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="SQL">
+                <h3>📊 Análise de Vendas — SQL</h3>
+                <p>Projeto utilizando SQL para extrair métricas, KPIs e relatórios de desempenho mensal.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Power BI">
+                <h3>📈 Dashboard de Indicadores — Power BI</h3>
+                <p>Dashboard profissional com KPIs, filtros, segmentações e análises visuais interativas.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Python">
+                <h3>🐍 ETL com Python + Pandas</h3>
+                <p>Pipeline de transformação de dados com limpeza, integração e geração de dataset final.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Habilidades Técnicas</h2>
+
+        <div class="skills-box">
+            ✔ SQL (MySQL, SQL Server) <br>
+            ✔ Python (Pandas, NumPy, Matplotlib) <br>
+            ✔ Power BI — Dashboards e KPIs <br>
+            ✔ Excel Avançado (Procv, Tabelas Dinâmicas) <br>
+            ✔ Git e GitHub <br>
+            ✔ HTML e CSS (fundamentos)
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+
+        <p style="text-align:center; font-size:18px;">
+            📧 <b>Email:</b> wesleybueno@gmail.com <br>
+            💼 <b>LinkedIn:</b> linkedin.com/in/wesley-bueno <br>
+            🐱 <b>GitHub:</b> github.com/wesleybueno
+        </p>
+    </section>
+
+    <footer>
+        © 2025 — Desenvolvido por Wesley Bueno
+    </footer>
+
+</body>
+
+</html>
